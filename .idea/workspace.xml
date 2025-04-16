@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5354b950-40c9-4edd-b57c-a9121430347d" name="更改" comment="Fix Clang Template errors&#10;&#10;Upcoming versions of Clang/LLVM change some behaviour around templating that causes OpenVDB to fail to compile.&#10;&#10;This commit addresses two issues and allows VDB to compile again.&#10;&#10;1. There were three instances of an unnecessary template keyword in NodeManager.h that were not followed by a template call, and therefore are illegal to the compiler.&#10;&#10;2. GridBuilder.h had a template call to a non-existent method. This was not previously validated, but is now validated. Switching the symbol from `isActive` to `isOn` per Ken's review.&#10;&#10;See the [changelog](https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html#improvements-to-clang-s-diagnostics:~:text=Clang%20now%20looks%20up%20members%20of%20the%20current%20instantiation%20in%20the%20template%20definition%20context%20if%20the%20current%20instantiation%20has%20no%20dependent%20base%20classes.) for Clang and the associated [PR for the second point above](llvm/llvm-project#84050)&#10;&#10;&#10;https://github.com/AcademySoftwareFoundation/openvdb/commit/930c3acb8e0c7c2f1373f3a70dc197f5d04dfe74" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Xeu &lt;i@xeu.life&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="3.3" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2vnz4fWqcTBlAmz8oKBQZKMfiPx" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/xeu/projects/openvdb",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5354b950-40c9-4edd-b57c-a9121430347d" name="更改" comment="" />
+      <created>1744795436049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744795436049</updated>
+      <workItem from="1744795437220" duration="766000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fix Clang Template errors&#10;&#10;Upcoming versions of Clang/LLVM change some behaviour around templating that causes OpenVDB to fail to compile.&#10;&#10;This commit addresses two issues and allows VDB to compile again.&#10;&#10;1. There were three instances of an unnecessary template keyword in NodeManager.h that were not followed by a template call, and therefore are illegal to the compiler.&#10;&#10;2. GridBuilder.h had a template call to a non-existent method. This was not previously validated, but is now validated. Switching the symbol from `isActive` to `isOn` per Ken's review.&#10;&#10;See the [changelog](https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html#improvements-to-clang-s-diagnostics:~:text=Clang%20now%20looks%20up%20members%20of%20the%20current%20instantiation%20in%20the%20template%20definition%20context%20if%20the%20current%20instantiation%20has%20no%20dependent%20base%20classes.) for Clang and the associated [PR for the second point above](llvm/llvm-project#84050)&#10;&#10;&#10;https://github.com/AcademySoftwareFoundation/openvdb/commit/930c3acb8e0c7c2f1373f3a70dc197f5d04dfe74">
+      <option name="closed" value="true" />
+      <created>1744795537258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744795537258</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix Clang Template errors&#10;&#10;Upcoming versions of Clang/LLVM change some behaviour around templating that causes OpenVDB to fail to compile.&#10;&#10;This commit addresses two issues and allows VDB to compile again.&#10;&#10;1. There were three instances of an unnecessary template keyword in NodeManager.h that were not followed by a template call, and therefore are illegal to the compiler.&#10;&#10;2. GridBuilder.h had a template call to a non-existent method. This was not previously validated, but is now validated. Switching the symbol from `isActive` to `isOn` per Ken's review.&#10;&#10;See the [changelog](https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html#improvements-to-clang-s-diagnostics:~:text=Clang%20now%20looks%20up%20members%20of%20the%20current%20instantiation%20in%20the%20template%20definition%20context%20if%20the%20current%20instantiation%20has%20no%20dependent%20base%20classes.) for Clang and the associated [PR for the second point above](llvm/llvm-project#84050)&#10;&#10;&#10;https://github.com/AcademySoftwareFoundation/openvdb/commit/930c3acb8e0c7c2f1373f3a70dc197f5d04dfe74">
+      <option name="closed" value="true" />
+      <created>1744795594340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744795594340</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix Clang Template errors&#10;&#10;Upcoming versions of Clang/LLVM change some behaviour around templating that causes OpenVDB to fail to compile.&#10;&#10;This commit addresses two issues and allows VDB to compile again.&#10;&#10;1. There were three instances of an unnecessary template keyword in NodeManager.h that were not followed by a template call, and therefore are illegal to the compiler.&#10;&#10;2. GridBuilder.h had a template call to a non-existent method. This was not previously validated, but is now validated. Switching the symbol from `isActive` to `isOn` per Ken's review.&#10;&#10;See the [changelog](https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html#improvements-to-clang-s-diagnostics:~:text=Clang%20now%20looks%20up%20members%20of%20the%20current%20instantiation%20in%20the%20template%20definition%20context%20if%20the%20current%20instantiation%20has%20no%20dependent%20base%20classes.) for Clang and the associated [PR for the second point above](llvm/llvm-project#84050)&#10;&#10;&#10;https://github.com/AcademySoftwareFoundation/openvdb/commit/930c3acb8e0c7c2f1373f3a70dc197f5d04dfe74">
+      <option name="closed" value="true" />
+      <created>1744795672433</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744795672433</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix Clang Template errors&#10;&#10;Upcoming versions of Clang/LLVM change some behaviour around templating that causes OpenVDB to fail to compile.&#10;&#10;This commit addresses two issues and allows VDB to compile again.&#10;&#10;1. There were three instances of an unnecessary template keyword in NodeManager.h that were not followed by a template call, and therefore are illegal to the compiler.&#10;&#10;2. GridBuilder.h had a template call to a non-existent method. This was not previously validated, but is now validated. Switching the symbol from `isActive` to `isOn` per Ken's review.&#10;&#10;See the [changelog](https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html#improvements-to-clang-s-diagnostics:~:text=Clang%20now%20looks%20up%20members%20of%20the%20current%20instantiation%20in%20the%20template%20definition%20context%20if%20the%20current%20instantiation%20has%20no%20dependent%20base%20classes.) for Clang and the associated [PR for the second point above](llvm/llvm-project#84050)&#10;&#10;&#10;https://github.com/AcademySoftwareFoundation/openvdb/commit/930c3acb8e0c7c2f1373f3a70dc197f5d04dfe74" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Clang Template errors&#10;&#10;Upcoming versions of Clang/LLVM change some behaviour around templating that causes OpenVDB to fail to compile.&#10;&#10;This commit addresses two issues and allows VDB to compile again.&#10;&#10;1. There were three instances of an unnecessary template keyword in NodeManager.h that were not followed by a template call, and therefore are illegal to the compiler.&#10;&#10;2. GridBuilder.h had a template call to a non-existent method. This was not previously validated, but is now validated. Switching the symbol from `isActive` to `isOn` per Ken's review.&#10;&#10;See the [changelog](https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html#improvements-to-clang-s-diagnostics:~:text=Clang%20now%20looks%20up%20members%20of%20the%20current%20instantiation%20in%20the%20template%20definition%20context%20if%20the%20current%20instantiation%20has%20no%20dependent%20base%20classes.) for Clang and the associated [PR for the second point above](llvm/llvm-project#84050)&#10;&#10;&#10;https://github.com/AcademySoftwareFoundation/openvdb/commit/930c3acb8e0c7c2f1373f3a70dc197f5d04dfe74" />
+  </component>
+</project>
